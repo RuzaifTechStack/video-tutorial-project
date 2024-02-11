@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Turorials</title>
+</head>
+<body class="container-fluid">
+  <header>
+    <nav class="navbar navbar-expand-sm  text-white mt-2">
+      <div class="container">
+        <h1 class="navbar-brand  fw-bold text-white fs-2 me-4">Tech Videos</h1>
+        <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bi bi-list fs-4"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-5">
+            <li class="nav-item">
+              <a class="nav-link active text-white fs-4 me-4" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white fs-4 me-4" aria-current="page" href="#">Videos</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link text-white fs-4 me-4" href="#">About</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link text-white fs-4" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button class="btn btn-primary me-5" id="usersignin">User Login</button>
+          <button class="btn btn-danger ms-5" id="adminsignin">Admin Login</button>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center mt-5 text-white text-center">
+      <div id="maincontainer">
+        <div class="h1 fw-bold text-danger">Learning Coding..</div>
+        <p class="fs-5">HTML5, CSS3, Javascript, jQuery, Bootstrap, ReactJs etc... </p>
+
+        <div class="input-group mt-3 text-center" id="emailcontainer">
+          <input type="email" id="Email" placeholder="Enter Your Email" class="form-control">
+          <button class="btn btn-warning p-2" id="Getstartedbtn">Get Started <span class="bi bi-chevron-right"></span></button>
+        </div>
+        <div id="error" class="text-white text-center fw-bold fs-5"></div>
+        <div class="input-group mt-4 text-center" id="passwordcontainer">
+          <input type="password" id="Password" class="form-control" placeholder="Enter password">
+          <button id="btnHomesignin" class="btn btn-warning p-2"> SignIn  <span class="bi bi-chevron-right"></span></button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <section>
+     <main>
+     <div class="d-flex justify-content-around p-3 m-1 flex-wrap">
+      <div class="card">
+        <img src="./html-css.avif" width="100" height="300" alt="" class="card-img-top">
+          <div>
+            <button onclick="LoginClick()" class="btn btn-dark w-100">Join Course</button>
+          </div>
+      </div>
+      <div class="card">
+        <img src="./react.avif" width="100" height="300" alt="" class="card-img-top">
+          <div>
+            <button onclick="LoginClick()" class="btn btn-dark w-100">Join Course</button>
+          </div>
+      </div>
+     </div>
+      
+     </main>
+  </section>
+
+  <script>
+    function LoginClick(){
+      alert("Please Register/Login to Watch Videos...");
+    }
+  </script>
+</body>
+</html>
